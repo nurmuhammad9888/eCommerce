@@ -1,9 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import "./header.css"
 import Logo from '../../assets/images/Logo.svg';
 
 export const Header = () => {
+
+const [activ ,setActiv] = useState(false)
+
+    const handeler = () => {
+        setActiv(!activ)
+    }
     return (
         <>
         <div className='line'>
@@ -51,6 +57,40 @@ export const Header = () => {
                 </div>
             </div>
         </div>
+        <header className="header-select">
+            <div className="container">
+                <nav className='header-navbar'>
+                    <ul className="header-list">
+                        <li className="header-item">
+                            <NavLink onClick={handeler} className={({isActive}) => isActive ? "header-link header-link-active " : "header-link"} to={"/"}>Home</NavLink>
+                            <div className={activ ? 'dropdown-content-active' : 'dropdown-content'}>
+                                <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/"}>Home</NavLink>
+                                <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/"}>Home</NavLink>
+                            </div>
+                        </li>
+                        <li className="header-item">
+                            <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/shop"}>Shop</NavLink>
+                        </li>
+                        <li className="header-item">
+                            <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/pages"}>Pages</NavLink>
+                        </li>
+                        <li className="header-item">
+                            <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/blog"}>Blog</NavLink>
+                        </li>
+                        <li className="header-item">
+                            <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/about"}>About Us</NavLink>
+                        </li>
+                        <li className="header-item">
+                            <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/contact"}>Contact Us</NavLink>
+                        </li>
+                    </ul>
+                    <div className="header-conatct">
+                        <Link className='header-contact-link' to={"tel:2195550114"}>(219) 555-0114</Link>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
         </>
     )
 }

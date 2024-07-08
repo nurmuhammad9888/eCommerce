@@ -191,3 +191,88 @@
     line-height: 14px; 
     color: var(--gray-scale-gray-–-900);
 }
+
+.header-select {
+    padding: 16px 0;
+    background: var(--gray-scale-gray-–-800);
+}
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.header-item {
+    margin-right: 52px;
+}
+.header-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-400);
+}
+.header-link:hover{
+    color: var(--gray-scale-white);
+}
+.header-link-active{
+    color: var(--gray-scale-white);
+}
+.header-conatct {
+}
+.header-contact-link{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-white);
+    text-decoration: none;
+}
+.header-contact-link::before{
+    content: '';
+    /* display: flex; */
+    margin-right: 8px;
+    width: 28px;
+    height: 28px;
+    background-image: url("../../assets/images/phoneCall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.header-item{
+    position: relative;
+}
+.header-item::after{
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../assets/images/headerdown.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 5px;
+    transition: transform 0.5s ease;
+
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown-content-active{
+    position: absolute;
+    /* display: none; */
+    flex-direction: column;
+    top: 40px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
