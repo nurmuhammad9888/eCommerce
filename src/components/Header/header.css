@@ -118,7 +118,6 @@
 }
 .header-search:focus{
     outline: 1px solid var(--gray-scale-gray-–-100);
-    
 }
 .header-shopping {
     display: flex;

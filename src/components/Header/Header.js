@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./header.css"
 import Logo from '../../assets/images/Logo.svg';
+import { NavbarLocation } from '../Navbar/NavbarLocation';
+import { Login } from '../../pages/Login/Login';
+import { Register } from '../../pages/Register/Register';
+import { Article } from '../../pages/Article/Article';
 
 export const Header = () => {
 
@@ -90,7 +94,10 @@ const [activ ,setActiv] = useState(false)
                 </nav>
             </div>
         </header>
-
+        <NavbarLocation/>
+        {/* <Login/> */}
+        <Register/>
+        <Article/>
         </>
     )
 }
