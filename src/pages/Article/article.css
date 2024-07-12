@@ -30,8 +30,6 @@
     line-height: 21px; 
     color: var(--gray-scale-gray-–-400);
 }
-.article-form {
-}
 .article-email{
     border: 1px solid var(--gray-scale-gray-–-100);
     border-radius: 46px;
@@ -77,6 +75,7 @@
     color: #4D4D4D;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 .article-subcribe-icon:hover {
     background-color: var(--branding-success);
