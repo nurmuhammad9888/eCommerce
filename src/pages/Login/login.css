@@ -11,7 +11,7 @@
     border-radius: 8px;
     padding: 24px 24px 32px 24px;
     width: 520px;
-    height: 432px;
+    height: 371px;
     box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
     background: var(--gray-scale-white);
 }
@@ -114,4 +114,11 @@
     line-height: 21px; 
     color: var(--gray-scale-gray-–-900);
     text-decoration: none;
+}
+.error{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--branding-error);
+    transition: all 0.5s ease;
 }

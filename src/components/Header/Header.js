@@ -2,10 +2,6 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./header.css"
 import Logo from '../../assets/images/Logo.svg';
-import { NavbarLocation } from '../Navbar/NavbarLocation';
-import { Login } from '../../pages/Login/Login';
-import { Register } from '../../pages/Register/Register';
-import { Article } from '../../pages/Article/Article';
 
 export const Header = () => {
 
@@ -35,9 +31,9 @@ const [activ ,setActiv] = useState(false)
                         </div>
                         <span className='header-top-line'></span>
                         <div className="header-top-sigin-wrap">
-                            <Link className='header-top-sigin' to={"/signin"}>Sign In</Link>
+                            <Link className='header-top-sigin' to={"/login"}>Sign In</Link>
                             <span className='header-top-left-line'>/</span>
-                            <Link className='header-top-sigin' to={"/signup"}>Sign Up</Link>
+                            <Link className='header-top-sigin' to={"/register"}>Sign Up</Link>
                         </div>
                     </div>
                 </div>
@@ -94,10 +90,6 @@ const [activ ,setActiv] = useState(false)
                 </nav>
             </div>
         </header>
-        <NavbarLocation/>
-        {/* <Login/> */}
-        <Register/>
-        <Article/>
         </>
     )
 }

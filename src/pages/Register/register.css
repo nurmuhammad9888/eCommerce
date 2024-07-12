@@ -1,0 +1,17 @@
+.login-wrap-rigester{
+    height: 432px;
+    transition: all 0.5s ease;
+}
+.login-wrap-rigester-error{
+    height: 452px;
+}
+.passwor-input-error{
+    border: 1px solid var(--branding-error);
+}
+.error{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--branding-error);
+    transition: all 0.5s ease;
+}
