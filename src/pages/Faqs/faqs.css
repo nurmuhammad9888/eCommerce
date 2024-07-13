@@ -1,0 +1,94 @@
+.faqs {
+    margin-top: 80px;
+}
+.container {
+}
+.faqs-wrap {
+    display: flex;
+}
+.faqs-content {
+    padding-top: 108px;
+    padding-bottom: 106px;
+}
+.faqs-content-title {
+    margin: 0 0 32px 0;
+    width: 532px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.faqs-content-details {
+    width: 648px;
+    margin-top: 12px;
+    /* height: 171px; */
+}
+.faqs-content-summary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 648px;
+    height: 32px;
+    border-radius: 6px;
+    padding: 12px 16px;
+    background: var(--gray-scale-gray-–-50);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--gray-scale-gray-–-900);
+    list-style: none;
+    cursor: pointer;
+}
+.faqs-content-summary::before{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: var(--gray-scale-white);
+    border-radius: 50%;
+    background-image: url("../../assets/images/plus.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+.faqs-content-text {
+    margin: 0;
+    border: 1px solid var(--branding-success-bright);
+    border-top-color: transparent;
+    border-radius: 0 0 6px 6px;
+    padding: 16px;
+    width: 648px;
+    height: 116px;
+    background: var(--gray-scale-white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--gray-scale-gray-–-600);
+}
+.faqs-img {
+    position: relative;
+}
+.faqs-img::after{
+    content: '';
+    position: absolute;
+    top: -57px;
+    right: -806px;
+    width: 661px;
+    height: 772px;
+    background-image: url("../../assets/images/faqsbg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.faqs-content-details[open] .faqs-content-summary {
+    color: var(--branding-success-dark);
+    border: 1px solid var(--branding-success-bright);
+    background: var(--gray-scale-white);
+    border-radius: 6px 6px 0 0;
+}
+.faqs-content-details[open] .faqs-content-summary::before {
+    background-color: var(--gray-scale-gray-–-50);
+}

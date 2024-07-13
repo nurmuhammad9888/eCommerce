@@ -11,6 +11,7 @@ import { Shop } from './pages/Shop/Shop';
 import { Footer } from './pages/Footer/Footer';
 import { Blog } from './pages/Blog/Blog';
 import { About } from './pages/About/About';
+import { Error404 } from './pages/Error404/Error404';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/footer' element={<Footer/>}/>
+        <Route path='*' element={<Error404/>}/>
       </Routes>
       <Article/>
     </div>

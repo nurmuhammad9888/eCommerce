@@ -1,0 +1,41 @@
+.error-page-wrap{
+    margin: 80px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-page {
+    width: 612px;
+}
+.error-page-title {
+    margin-top: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px; 
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+.error-page-content {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    text-align: center;
+    color: var(--gray-scale-gray-–-500);
+}
+.error-page-link {
+    text-decoration: none;
+    border-radius: 43px;
+    margin: 0 auto;
+    margin-top: 24px;
+    display: block;
+    padding: 14px 32px;
+    width: 163px;
+    height: 45px;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px; 
+    color: var(--gray-scale-white);
+}
