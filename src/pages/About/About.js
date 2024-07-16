@@ -1,7 +1,16 @@
 import React from 'react'
-import "./about.css"
 import aboutImg01 from "../../assets/images/aboutimg01.jpg"
 import aboutOrganic from "../../assets/images/aboutimg02.jpg"
+import aboutTeam01 from "../../assets/images/aboutcarusel01.jpg"
+import aboutTeam02 from "../../assets/images/aboutcarusel02.jpg"
+import aboutTeam03 from "../../assets/images/aboutcarusel03.jpg"
+import aboutTeam04 from "../../assets/images/aboutcarusel04.jpg"
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import "./about.css"
+import { Navigation } from 'swiper/modules'
 
 export const About = () => {
     return (
@@ -50,6 +59,99 @@ export const About = () => {
                             <p className="about-organic-item-text">100% healthy & Fresh food.</p>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div className="container">
+                <div className="about-deliver">
+                    <h3 className="about-deliver-title">We Delivered, You Enjoy Your Order. </h3>
+                    <p className="about-deliver-text">Ut suscipit egestas suscipit. Sed posuere pellentesque nunc, ultrices consectetur velit dapibus eu. Mauris sollicitudin dignissim diam, ac mattis eros accumsan rhoncus. Curabitur auctor bibendum nunc eget elementum.</p>
+                    <ul className="about-deliver-list">
+                        <li className="about-deliver-item">
+                            <span className='about-deliver-check'>Sed in metus pellentesque.</span>
+                        </li>
+                        <li className="about-deliver-item">
+                            <span className='about-deliver-check'>Fusce et ex commodo, aliquam nulla efficitur, tempus lorem.</span>
+                        </li>
+                        <li className="about-deliver-item">
+                            <span className='about-deliver-check'>Maecenas ut nunc fringilla erat varius.</span>
+                        </li>
+                    </ul>
+                    <button className='about-deliver-btn'>Shop Now</button>
+                    <div className="about-deliver-img"></div>
+                </div>
+                <div className="about-team">
+                    <div className="about-team-content">
+                        <h2 className="about-team-title">Our Awesome Team</h2>
+                        <p className="about-team-text">Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi.</p>
+                    </div>
+                        <ul className="about-team-list">
+                        <Swiper
+                            spaceBetween={50}
+                            slidesPerView={4}
+                            modules={[Navigation]}
+                            navigation
+                            loop={true}
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={(swiper) => console.log(swiper)}
+                            >
+                                <SwiperSlide>    
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam01} alt="team human" />
+                                        <span className='about-team-item-name'>Jenny Wilson</span>
+                                        <p className="about-team-item-job">Ceo & Founder</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam02} alt="team human" />
+                                        <span className='about-team-item-name'>Jane Cooper</span>
+                                        <p className="about-team-item-job">Worker</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam03} alt="team human" />
+                                        <span className='about-team-item-name'>Cody Fisher</span>
+                                        <p className="about-team-item-job">Security Guard</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam04} alt="team human" />
+                                        <span className='about-team-item-name'>Robert Fox</span>
+                                        <p className="about-team-item-job">Senior Farmer Manager</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>    
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam01} alt="team human" />
+                                        <span className='about-team-item-name'>Jenny Wilson</span>
+                                        <p className="about-team-item-job">Ceo & Founder</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam02} alt="team human" />
+                                        <span className='about-team-item-name'>Jane Cooper</span>
+                                        <p className="about-team-item-job">Worker</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam03} alt="team human" />
+                                        <span className='about-team-item-name'>Cody Fisher</span>
+                                        <p className="about-team-item-job">Security Guard</p>
+                                    </li>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <li className="about-team-item">
+                                        <img src={aboutTeam04} alt="team human" />
+                                        <span className='about-team-item-name'>Robert Fox</span>
+                                        <p className="about-team-item-job">Senior Farmer Manager</p>
+                                    </li>
+                                </SwiperSlide>
+                            </Swiper>
+                        </ul>
                 </div>
             </div>
         </div>

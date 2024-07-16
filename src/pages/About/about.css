@@ -34,6 +34,12 @@
 .about-organic {
     display: flex;
     position: relative;
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+    /* height: 685px; */
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
 }
 .about-organic-img{
     margin-left: -190px;
@@ -69,6 +75,7 @@
 }
 .about-organic-list {
     width: 648px;
+    margin-top: 24px;
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -76,12 +83,41 @@
     gap: 24px;
 }
 .about-organic-item {
+    margin: 8px 0;
     width: 312px;
     /* height: 72px; */
+    padding-left: 88px;
+    position: relative;
     background: var(--gray-scale-white);
 }
 .about-organic-item::before{
-    
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    background: rgba(0, 178, 7, 0.1);
+    background-image: url("../../assets/images/aboutleaf.png");
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-organic-item:nth-child(2):before{
+    background-image: url("../../assets/images/aboutstars.png");
+}
+.about-organic-item:nth-child(3):before{
+    background-image: url("../../assets/images/aboutdelivery-truck.png");
+}
+.about-organic-item:nth-child(4):before{
+    background-image: url("../../assets/images/aboutheadphones.png");
+}
+.about-organic-item:nth-child(5):before{
+    background-image: url("../../assets/images/aboutshopping-bag.png");
+}
+.about-organic-item:nth-child(6):before{
+    background-image: url("../../assets/images/aboutpackage.png");
 }
 .about-organic-item-title {
     margin: 0;
@@ -97,4 +133,185 @@
     font-size: 14px;
     line-height: 150%;
     color: var(--gray-scale-gray-–-500);
+}
+
+.about-deliver {
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 105px;
+    width: 541px;
+}
+.about-deliver-title {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.about-deliver-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--gray-scale-gray-–-600);
+}
+.about-deliver-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+.about-deliver-item:nth-child(2) {
+    margin: 16px 0;
+}
+.about-deliver-check {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+    color: var(--gray-scale-gray-–-600);
+}
+.about-deliver-check::before{
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-color: #00b20710;
+    border-radius: 50%;
+    background-image: url("../../assets/images/aboutcheck.png");
+    background-size: 12.5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-deliver-btn {
+    margin-top: 32px;
+    display: flex;
+    padding: 16px 40px;
+    width: 192px;
+    height: 51px;
+    border-radius: 43px;
+    align-items: center;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px; ;
+    color: var(--gray-scale-white);
+    border: none;
+    cursor: pointer;
+}
+.about-deliver-btn::after{
+    content: '';
+    display: flex;
+    width: 15px;
+    height: 12.5px;
+    margin-left: 16px;
+    background-image: url("../../assets/images/aboutnexticon.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-deliver-img {
+    position: absolute;
+    top: -70px;
+    left: 581px;
+    width: 895px;
+    height: 606px;
+    background-image: url("../../assets/images/about03.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* about tema  */
+
+.about-team {
+    padding: 80px 0;
+}
+.about-team-content {
+    width: 640px;
+    margin: 0 auto;
+}
+.about-team-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px; 
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+.about-team-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px; 
+    text-align: center;
+    color: var(--gray-scale-gray-–-600);
+}
+.about-team-list {
+    padding-left: 0;
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+.about-team-item img{
+    border-radius: 8px 8px 0 0;
+    width: 311px;
+    height: 280px;
+}
+.about-team-item {
+    width: 312px;
+    height: 368px;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 8px;
+    background: var(--gray-scale-white);
+}
+.about-team-item-name {
+    margin: 16px 20px 4px 20px;
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.about-team-item-job {
+    margin: 0 20px 20px 20px;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-500);
+}
+.about-team .swiper{
+    position: static;
+    /* z-index: -1; */
+}
+.about-team .swiper-button-next::after,
+.about-team .swiper-button-prev::after{
+    font-size: 0;
+    width: 15px;
+    height: 12.5px;
+    background-color: transparent;
+    background-image: url("../../assets/images/aboutnextsvg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-team .swiper-button-prev::after{
+    transform: rotate(180deg);
+}
+.about-team .swiper-button-next,
+.about-team .swiper-button-prev{
+    right: -80px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color:  var(--gray-scale-white);
+    border: 1px solid var(--gray-scale-gray-–-100);
+}
+.about-team .swiper-button-prev{
+    left: -80px;
 }
