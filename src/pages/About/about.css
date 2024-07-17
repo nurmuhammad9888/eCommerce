@@ -200,6 +200,7 @@
     color: var(--gray-scale-white);
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .about-deliver-btn::after{
     content: '';
@@ -228,6 +229,7 @@
 
 .about-team {
     padding: 80px 0;
+    background: linear-gradient(180deg, #f2f2f2 0%, #fff 100%);
 }
 .about-team-content {
     width: 640px;
@@ -251,6 +253,8 @@
 }
 .about-team-list {
     padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
     position: relative;
     list-style: none;
     display: flex;
@@ -285,26 +289,32 @@
     line-height: 21px; 
     color: var(--gray-scale-gray-–-500);
 }
-.about-team .swiper{
+.about-team .swiper,
+.about-client .swiper{
     position: static;
     /* z-index: -1; */
 }
 .about-team .swiper-button-next::after,
-.about-team .swiper-button-prev::after{
+.about-team .swiper-button-prev::after,
+.about-client .swiper-button-next::after,
+.about-client .swiper-button-prev::after{
     font-size: 0;
-    width: 15px;
-    height: 12.5px;
+    width: 17px;
+    height: 14px;
     background-color: transparent;
     background-image: url("../../assets/images/aboutnextsvg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.about-team .swiper-button-prev::after{
+.about-team .swiper-button-prev::after,
+.about-client .swiper-button-prev::after{
     transform: rotate(180deg);
 }
 .about-team .swiper-button-next,
-.about-team .swiper-button-prev{
+.about-team .swiper-button-prev,
+.about-client .swiper-button-next,
+.about-client .swiper-button-prev{
     right: -80px;
     width: 45px;
     height: 45px;
@@ -312,6 +322,114 @@
     background-color:  var(--gray-scale-white);
     border: 1px solid var(--gray-scale-gray-–-100);
 }
+.about-client .swiper-button-prev:hover,
+.about-client .swiper-button-next:hover{
+    background-color: var(--branding-success);
+    fill: var(--gray-scale-white);
+}
+.about-client .swiper-button-next{
+    top: -70px;
+    right: 0;
+    z-index: 11;
+}
+.about-client .swiper-button-prev{
+    /* right: 40px; */
+    left: 1220px;
+    top: -70px;
+}
 .about-team .swiper-button-prev{
     left: -80px;
+}
+
+
+.about-client {
+    background: var(--gray-scale-gray-–-50);
+    padding: 100px 0px;
+}
+.about-client-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.about-client-list {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-client-item {
+    border-radius: 8px;
+    width: 424px;
+    padding: 24px;
+    height: 254px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.01);
+    background: var(--gray-scale-white);
+}
+.about-client-item-content {
+    margin: 0 0 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-700);
+}
+.about-client-item-content::before{
+    content: '';
+    width: 32px;
+    height: 26px;
+    display: block;
+    margin-bottom: 16px;
+    background-image: url("../../assets/images/aboutcquets.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-client-item-user-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-client-item-name-wrap {
+    position: relative;
+    margin-left: 68px;
+}
+.about-client-item-name-wrap::before{
+    content: '';
+    position: absolute;
+    top:-3px;
+    left: -66px;
+    width: 56px;
+    height: 56px;
+    background-image: url("../../assets/images/aboutclient01.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-slide:nth-child(2) .about-client-item-name-wrap:before{
+    background-image: url("../../assets/images/aboutclient02.png");
+}
+.swiper-slide:nth-child(3) .about-client-item-name-wrap:before{
+    background-image: url("../../assets/images/aboutclient03.png");
+}
+.about-client-item-name {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.about-client-customer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-400);
+}
+.star-svg{
+    width: 20px;
+    height: 20px;
 }

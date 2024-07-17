@@ -1,4 +1,5 @@
-import React from 'react'
+// import React from 'react'
+import React, { useState } from 'react'
 import aboutImg01 from "../../assets/images/aboutimg01.jpg"
 import aboutOrganic from "../../assets/images/aboutimg02.jpg"
 import aboutTeam01 from "../../assets/images/aboutcarusel01.jpg"
@@ -11,8 +12,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import "./about.css"
 import { Navigation } from 'swiper/modules'
+import { Rating } from 'react-simple-star-rating'
+import { Link } from 'react-router-dom'
+
 
 export const About = () => {
+
+    const [rating, setRating] = useState(2);
+    const [rating02, setRating02] = useState(2);
+    const [rating03, setRating03] = useState(2);
+
+    const handleRating = rate =>  setRating(rate)
+    const handleRating02 = rate =>  setRating02(rate)
+    const handleRating03 = rate =>  setRating03(rate)
+
     return (
         <div className="about">
             <div className="container">
@@ -76,82 +89,162 @@ export const About = () => {
                             <span className='about-deliver-check'>Maecenas ut nunc fringilla erat varius.</span>
                         </li>
                     </ul>
-                    <button className='about-deliver-btn'>Shop Now</button>
+                    <Link to={"/"} className='about-deliver-btn'>Shop Now</Link>
                     <div className="about-deliver-img"></div>
                 </div>
+            </div>
                 <div className="about-team">
-                    <div className="about-team-content">
-                        <h2 className="about-team-title">Our Awesome Team</h2>
-                        <p className="about-team-text">Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi.</p>
+                    <div className="container">
+                        <div className="about-team-content">
+                            <h2 className="about-team-title">Our Awesome Team</h2>
+                            <p className="about-team-text">Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a mi.</p>
+                        </div>
+                            <ul className="about-team-list">
+                            <Swiper
+                                spaceBetween={50}
+                                slidesPerView={4}
+                                modules={[Navigation]}
+                                navigation
+                                loop={true}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}
+                                >
+                                    <SwiperSlide>    
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam01} alt="team human" />
+                                            <span className='about-team-item-name'>Jenny Wilson</span>
+                                            <p className="about-team-item-job">Ceo & Founder</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam02} alt="team human" />
+                                            <span className='about-team-item-name'>Jane Cooper</span>
+                                            <p className="about-team-item-job">Worker</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam03} alt="team human" />
+                                            <span className='about-team-item-name'>Cody Fisher</span>
+                                            <p className="about-team-item-job">Security Guard</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam04} alt="team human" />
+                                            <span className='about-team-item-name'>Robert Fox</span>
+                                            <p className="about-team-item-job">Senior Farmer Manager</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>    
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam01} alt="team human" />
+                                            <span className='about-team-item-name'>Jenny Wilson</span>
+                                            <p className="about-team-item-job">Ceo & Founder</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam02} alt="team human" />
+                                            <span className='about-team-item-name'>Jane Cooper</span>
+                                            <p className="about-team-item-job">Worker</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam03} alt="team human" />
+                                            <span className='about-team-item-name'>Cody Fisher</span>
+                                            <p className="about-team-item-job">Security Guard</p>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-team-item">
+                                            <img src={aboutTeam04} alt="team human" />
+                                            <span className='about-team-item-name'>Robert Fox</span>
+                                            <p className="about-team-item-job">Senior Farmer Manager</p>
+                                        </li>
+                                    </SwiperSlide>
+                                </Swiper>
+                            </ul>
                     </div>
-                        <ul className="about-team-list">
+                </div>
+
+            <div className="about-client">
+                <div className="container">
+                    <h3 className="about-client-title">Client Testimonail</h3>
+                    <ul className="about-client-list">
                         <Swiper
-                            spaceBetween={50}
-                            slidesPerView={4}
-                            modules={[Navigation]}
-                            navigation
-                            loop={true}
-                            onSlideChange={() => console.log('slide change')}
-                            onSwiper={(swiper) => console.log(swiper)}
-                            >
-                                <SwiperSlide>    
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam01} alt="team human" />
-                                        <span className='about-team-item-name'>Jenny Wilson</span>
-                                        <p className="about-team-item-job">Ceo & Founder</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam02} alt="team human" />
-                                        <span className='about-team-item-name'>Jane Cooper</span>
-                                        <p className="about-team-item-job">Worker</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam03} alt="team human" />
-                                        <span className='about-team-item-name'>Cody Fisher</span>
-                                        <p className="about-team-item-job">Security Guard</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam04} alt="team human" />
-                                        <span className='about-team-item-name'>Robert Fox</span>
-                                        <p className="about-team-item-job">Senior Farmer Manager</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>    
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam01} alt="team human" />
-                                        <span className='about-team-item-name'>Jenny Wilson</span>
-                                        <p className="about-team-item-job">Ceo & Founder</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam02} alt="team human" />
-                                        <span className='about-team-item-name'>Jane Cooper</span>
-                                        <p className="about-team-item-job">Worker</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam03} alt="team human" />
-                                        <span className='about-team-item-name'>Cody Fisher</span>
-                                        <p className="about-team-item-job">Security Guard</p>
-                                    </li>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <li className="about-team-item">
-                                        <img src={aboutTeam04} alt="team human" />
-                                        <span className='about-team-item-name'>Robert Fox</span>
-                                        <p className="about-team-item-job">Senior Farmer Manager</p>
-                                    </li>
-                                </SwiperSlide>
-                            </Swiper>
-                        </ul>
+                                spaceBetween={50}
+                                slidesPerView={3}
+                                modules={[Navigation]}
+                                navigation
+                                loop={true}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}
+                                >
+                                    <SwiperSlide>
+                                        <li className="about-client-item">
+                                            <p className="about-client-item-content">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                                            <div className='about-client-item-user-wrap'>
+                                                <div className='about-client-item-name-wrap'>
+                                                    <span className='about-client-item-name'>Robert Fox</span>
+                                                    <span className='about-client-customer'>Customer</span>
+                                                </div>
+                                                <Rating onClick={handleRating} initialValue={rating} />
+                                            </div>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-client-item">
+                                            <p className="about-client-item-content">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                                            <div className='about-client-item-user-wrap'>
+                                                <div className='about-client-item-name-wrap'>
+                                                    <span className='about-client-item-name'>Dianne Russell</span>
+                                                    <span className='about-client-customer'>Customer</span>
+                                                </div>
+                                                <Rating onClick={handleRating02} initialValue={rating02} />
+                                            </div>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-client-item">
+                                            <p className="about-client-item-content">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                                            <div className='about-client-item-user-wrap'>
+                                                <div className='about-client-item-name-wrap'>
+                                                    <span className='about-client-item-name'>Eleanor Pena</span>
+                                                    <span className='about-client-customer'>Customer</span>
+                                                </div>
+                                                <Rating onClick={handleRating03} initialValue={rating03} />
+                                            </div>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-client-item">
+                                            <p className="about-client-item-content">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                                            <div className='about-client-item-user-wrap'>
+                                                <div className='about-client-item-name-wrap'>
+                                                    <span className='about-client-item-name'>Eleanor Pena</span>
+                                                    <span className='about-client-customer'>Customer</span>
+                                                </div>
+                                                <Rating onClick={handleRating03} initialValue={rating03} />
+                                            </div>
+                                        </li>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <li className="about-client-item">
+                                            <p className="about-client-item-content">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                                            <div className='about-client-item-user-wrap'>
+                                                <div className='about-client-item-name-wrap'>
+                                                    <span className='about-client-item-name'>Eleanor Pena</span>
+                                                    <span className='about-client-customer'>Customer</span>
+                                                </div>
+                                                <Rating onClick={handleRating03} initialValue={rating03} />
+                                            </div>
+                                        </li>
+                                    </SwiperSlide>
+                                </Swiper>
+                    </ul>
                 </div>
             </div>
         </div>
