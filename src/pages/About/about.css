@@ -322,6 +322,8 @@
     background-color:  var(--gray-scale-white);
     border: 1px solid var(--gray-scale-gray-–-100);
 }
+.about-team .swiper-button-next:hover,
+.about-team .swiper-button-prev:hover,
 .about-client .swiper-button-prev:hover,
 .about-client .swiper-button-next:hover{
     background-color: var(--branding-success);
@@ -349,6 +351,8 @@
 .about-client-title {
     font-weight: 600;
     font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 50px;
     line-height: 58px; 
     color: var(--gray-scale-gray-–-900);
 }
@@ -432,4 +436,22 @@
 .star-svg{
     width: 20px;
     height: 20px;
+}
+
+.about-partner-list {
+    padding: 80px 0px;
+    width: 1320px;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-partner-link{
+    text-decoration: none;
+    color: #B3B3B3;
+}
+.about-partner-link:hover svg{
+    color: #d8259b;
 }
