@@ -1,0 +1,104 @@
+.footer {
+    padding-top: 60px;
+    background: var(--gray-scale-gray-–-900);
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left-conatent {
+    width: 336px;
+    /* height: 166px; */
+}
+.footer-logo {
+}
+.footer-left-text {
+    margin: 16px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-500);
+}
+.footer-left-tel,
+.footer-left-email {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 21px; 
+    color: var(--gray-scale-white);
+    box-shadow: 0 1px 0 0 #20b526;
+    background: var(--gray-scale-gray-–-900);
+    padding: 6px 0px;
+}
+.footer-left-or {
+    display: inline-block;
+    margin: 0 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--gray-scale-gray-–-500);
+}
+.footer-left-email {
+}
+.footer-lsit {
+    max-width: 800px;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-item {
+    width: 130px;
+    height: 164px;
+}
+.footer-item-bold {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--gray-scale-white);
+}
+.footer-item-link {
+    margin-top: 12px;
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-400);
+}
+.footer-item-link:hover{
+    color: var(--gray-scale-white);
+}
+.footer-bottom {
+    margin-top: 60px;
+    padding: 24px 0;
+    box-shadow: 0 -1px 0 0 var(--gray-scale-gray-–-800);
+    background: var(--gray-scale-gray-–-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+.footer-bottom-item {
+    margin-left: 8px;
+}
+.footer-bottom-compname{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-500);
+}
+.footer-bottom-item-payments-link {
+}
