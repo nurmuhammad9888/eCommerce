@@ -12,6 +12,7 @@ import { Footer } from './pages/Footer/Footer';
 import { Blog } from './pages/Blog/Blog';
 import { About } from './pages/About/About';
 import { Error404 } from './pages/Error404/Error404';
+import { Account } from './pages/Account/Account';
 
 function App() {
   return (
@@ -26,8 +27,9 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/footer' element={<Footer/>}/>
-        <Route path='*' element={<Error404/>}/>
+        {/* <Route path='*' element={<Error404/>}/> */}
       </Routes>
+      <Account/>
       <Article/>
       <Footer/>
     </div>

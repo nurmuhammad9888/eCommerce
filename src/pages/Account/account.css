@@ -1,0 +1,72 @@
+.account {
+    padding: 32px 0 80px 0;
+}
+.dashboard-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard-navigation-list {
+    width: 312px;
+    height: 418px;
+    list-style: none;
+    margin: 0;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 8px;
+    padding: 0px 0px 12px 0px;
+    background: var(--gray-scale-white);
+}
+.dashboard-navigation-item:nth-child(1) {
+    padding: 16px 20px;
+    /* width: 312px;
+    height: 56px; */
+}
+.navigation-item-title {
+    padding-top: 6px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.navigation-item-link {
+    padding: 16px 20px;
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    align-items: center;
+    line-height: 24px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.navigation-item-link::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../../assets/images/dashboard.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+}
+.dashboard-navigation-item:nth-child(3) .navigation-item-link::before{
+    background-image: url("../../assets/images/orderhistory.svg");
+}
+.dashboard-navigation-item:nth-child(4) .navigation-item-link::before{
+    background-image: url("../../assets/images/wishlist.svg");
+}
+.dashboard-navigation-item:nth-child(5) .navigation-item-link::before{
+    background-image: url("../../assets/images/shoppingcard.svg");
+}
+.dashboard-navigation-item:nth-child(6) .navigation-item-link::before{
+    background-image: url("../../assets/images/settings.svg");
+}
+.dashboard-navigation-item:nth-child(7) .navigation-item-link::before{
+    background-image: url("../../assets/images/logout.svg");
+}
+.dashboard-user-wrap {
+}
+.dashboard-navigation-item-active{
+    box-shadow: inset 3px 0 0 0 #20b526;
+    background: var(--gren-gray-scale-50);
+}

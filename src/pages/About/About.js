@@ -287,7 +287,7 @@ export const About = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </Link>
+                            </Link> 
                         </li>
                         <li className="about-partner-item">
                             <Link className ="about-partner-link" to={"/"}>
