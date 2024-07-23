@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./account.css";
-import { NavLink } from 'react-router-dom';
-import { Dashboard } from './Dashboard';
-
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 
 export const Account = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        navigate('dashboard');
+    }, []);
+
     return (
         <div className='account'>
             <div className="container">
@@ -33,7 +37,7 @@ export const Account = () => {
                         </li>
                     </ul>
                     <div className="dashboard-user-wrap">
-                        <Dashboard/>
+                        <Outlet/>
                     </div>
                 </div>
             </div>
