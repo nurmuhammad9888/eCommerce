@@ -15,8 +15,6 @@
     border: 1px solid var(--gray-scale-gray-–-100);
     border-radius: 8px;
 }
-.dashboard-user-img {
-}
 .dashboard-user-name {
     margin: 8px 0 2px 0;
     font-weight: 500;
