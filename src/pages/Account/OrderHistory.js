@@ -1,29 +1,62 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import "./orderhistory.css";
 import { Link } from 'react-router-dom';
+import ReactPaginate from 'react-paginate';
+import { Paginate } from '../Paginate/Paginate';
 
 export const OrderHistory = () => {
-nb 
-    const order =[
+
+    const orders =[
         {
             id: 738,
             date : "8 Sep, 2020",
-            total : "$135.00",
+            total : "$135.00 (5 Products)",
             status : "Processing"
         },
         {
             id: 703,
             date : "24 May, 2020",
-            total : "$25.00",
+            total : "$135.00 (4 Products)",
             status : "Processing"
         },
         {
-            id: 738,
+            id: 73867,
             date : "22 Oct, 2020",
-            total : "$250.00",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73843,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 7381,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73812,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 7338,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
             status : "Processing"
         },
     ];
+
 
     return (
         <div className='order-history'>
@@ -39,14 +72,17 @@ nb
                 <p className="order-table-hedaer"></p>
             </div>
             <ul className="order-history-list">
-                <li className="order-history-item">
-                    <span className='order-history-item-id'></span>
-                    <span className='order-history-item-data'></span>
-                    <span className='order-history-item-total'></span>
-                    <span className='order-history-item-status'></span>
-                    <Link to={'/'} className='order-history-item-id'>View Details</Link>
-                </li>
+                {orders.map(order => (
+                    <li key={order.id} className="order-history-item">
+                        <span className='order-history-item-id'>#{order.id}</span>
+                        <span className='order-history-item-data'>{order.date}</span>
+                        <span className='order-history-item-total'>{order.total}</span>
+                        <span className='order-history-item-status'>{order.status}</span>
+                        <Link to={'/'} className='order-history-item-link'>View Details</Link>
+                    </li>
+                ))}
             </ul>
+            <Paginate o />
         </div>
     )
 }

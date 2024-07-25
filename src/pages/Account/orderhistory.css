@@ -1,0 +1,100 @@
+.order-history {
+    margin-top: 24px;
+    padding: 16px 24px 24px;
+    width: 984px;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 8px;
+    /* height: 404px; */
+    background: var(--gray-scale-white);
+}
+.order-history-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-history-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.order-history-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--branding-success);
+    text-decoration: none;
+}
+.order-table-hedaer-wrap {
+    height: 36px;
+    margin: 16px -24px 12px -24px;
+    background: var(--gray-scale-gray-–-50);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.order-table-hedaer {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gray-scale-gray-–-700);
+}
+.order-table-hedaer:first-child{
+    padding-left: 24px;
+    width: 185px;
+}
+.order-table-hedaer:nth-child(2){
+    max-width: 230px;
+    width: 100%;
+}
+.order-table-hedaer:nth-child(3){
+    max-width: 270px;
+    width: 100%;
+}
+.order-table-hedaer:last-child{
+    padding-right: 24px;
+}
+.order-history-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+.order-history-item {
+    padding: 12px 0;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.order-history-item-id,
+.order-history-item-data,
+.order-history-item-total,
+.order-history-item-status {
+    max-width: 160px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-800);
+}
+.order-history-item-data {
+    max-width: 230px;
+    width: 100%;
+}
+.order-history-item-total {
+    max-width: 270px;
+    width: 100%;
+}
+.order-history-item-status {
+    max-width: 175px;
+    width: 100%;
+}
+.order-history-item-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--branding-success);
+}

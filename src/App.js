@@ -33,8 +33,6 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
           <Route path='account/*' element={<Account/>}>
-
-            {/* <Route index element ={<Dashboard/>}/> */}
             <Route path='dashboard' element ={<Dashboard/>}/>
             <Route path='orderhistory' element ={<OrderHistory/>}/>
             <Route path='wishlist' element ={<Wishlist/>}/>
@@ -43,7 +41,7 @@ function App() {
             <Route path='logout' element ={<Logout/>}/>
           </Route>
         <Route path='/footer' element={<Footer/>}/>
-        {/* <Route path='*' element={<Error404/>}/> */}
+        <Route path='*' element={<Error404/>}/> 
       </Routes>
       {/* <Account/> */}
       <Article/>
