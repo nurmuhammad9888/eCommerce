@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import "./orderhistory.css";
 import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
-import { Paginate } from '../Paginate/Paginate';
 
 export const OrderHistory = () => {
 
-    const orders =[
+    const items =[
         {
             id: 738,
             date : "8 Sep, 2020",
@@ -50,14 +49,151 @@ export const OrderHistory = () => {
             status : "Processing"
         },
         {
-            id: 73228,
+            id: 7334525428,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 734532528,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 734532358,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 713228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 7324328,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73267838,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 76813228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 7324368528,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 732678738,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 768136228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73243685258,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73224308,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 790323528,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73678238,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 71683228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73243867828,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 732686567838,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 768234213228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 732425434368528,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 73267435348738,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 76813663464228,
+            date : "22 Oct, 2020",
+            total : "$135.00 (15 Products)",
+            status : "Processing"
+        },
+        {
+            id: 732436852234258,
             date : "22 Oct, 2020",
             total : "$135.00 (15 Products)",
             status : "Processing"
         },
     ];
 
+    const itemsPerPage = 3;
+    const [itemOffset, setItemOffset] = useState(0);
+    const endOffset = itemOffset + itemsPerPage;
+    const currentItems = items.slice(itemOffset, endOffset);
+    const pageCount = Math.ceil(items.length / itemsPerPage);
 
+    
+    const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % items.length;
+        setItemOffset(newOffset);
+    };
+    
     return (
         <div className='order-history'>
             <div className="order-history-title-wrap">
@@ -72,7 +208,7 @@ export const OrderHistory = () => {
                 <p className="order-table-hedaer"></p>
             </div>
             <ul className="order-history-list">
-                {orders.map(order => (
+                {currentItems.map(order => (
                     <li key={order.id} className="order-history-item">
                         <span className='order-history-item-id'>#{order.id}</span>
                         <span className='order-history-item-data'>{order.date}</span>
@@ -82,7 +218,20 @@ export const OrderHistory = () => {
                     </li>
                 ))}
             </ul>
-            <Paginate o />
+            <ReactPaginate
+                breakLabel="..."
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={2}
+                pageCount={pageCount}
+                nextLabel={ <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.0835 1.16634L6.91683 6.99967L1.0835 12.833" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>}
+                previousLabel={ <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.9165 1.16634L1.08317 6.99967L6.9165 12.833" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>}
+                renderOnZeroPageCount={null}
+                containerClassName="pagination"
+                pageLinkClassName='page-num'
+                previousLinkClassName='page-prev'
+                nextLinkClassName='page-next'
+                activeLinkClassName='page-active'
+            />
         </div>
     )
 }
