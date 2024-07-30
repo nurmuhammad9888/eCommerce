@@ -182,7 +182,7 @@ export const OrderHistory = () => {
         },
     ];
 
-    const itemsPerPage = 3;
+    const itemsPerPage = 7;
     const [itemOffset, setItemOffset] = useState(0);
     const endOffset = itemOffset + itemsPerPage;
     const currentItems = items.slice(itemOffset, endOffset);
