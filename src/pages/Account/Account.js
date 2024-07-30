@@ -6,7 +6,7 @@ export const Account = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        navigate('dashboard');
+        // navigate('dashboard');
     }, []);
 
     return (

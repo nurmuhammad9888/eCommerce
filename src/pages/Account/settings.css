@@ -1,0 +1,102 @@
+.account-settings {
+    max-width: 984px;
+    width: 100%;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 8px;
+    padding: 0 24px 24px;
+    background: var(--gray-scale-white);
+    display: flex;
+}
+.account-settings-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+    padding: 16px 0px 16px 0 ;
+    line-height: 30px; 
+    color: var(--gray-scale-gray-–-900);
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    background: var(--gray-scale-white);
+}
+.account-settings-form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.account-settings-label{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.account-settings-input {
+    margin-top: 6px;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 512px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-600);
+}
+.account-settings-label:nth-child(1){
+    margin-top: 0;
+}
+.account-settings-last-name {
+}
+.account-settings-first-name {
+}
+.account-settings-email {
+}
+.account-settings-phone-number {
+}
+.account-settings-btn {
+    margin-top: 24px;
+    display: inline-block;
+    background: var(--branding-success);
+    border-radius: 43px;
+    padding: 14px 32px;
+    width: 167px;
+    height: 45px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px; 
+    color: var(--gray-scale-white);
+    cursor: pointer;
+}
+.account-settings-avatar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.account-settings-img {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+}
+.account-settings-avatar-label{
+    margin-top: 20px;
+    border: 2px solid var(--branding-success);
+    border-radius: 43px;
+    padding: 12px 32px;
+    width: 173px;
+    height: 45px;
+    background: var(--gray-scale-white);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px; 
+    color: var(--branding-success);
+    cursor: pointer;
+}
+.account-settings-img-file {
+    width: 0;
+    height: 0;
+}

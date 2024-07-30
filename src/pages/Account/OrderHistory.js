@@ -223,8 +223,8 @@ export const OrderHistory = () => {
                 onPageChange={handlePageClick}
                 pageRangeDisplayed={2}
                 pageCount={pageCount}
-                nextLabel={ <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.0835 1.16634L6.91683 6.99967L1.0835 12.833" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>}
-                previousLabel={ <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.9165 1.16634L1.08317 6.99967L6.9165 12.833" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>}
+                nextLabel={ <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.0835 1.16634L6.91683 6.99967L1.0835 12.833" stroke="#1A1A1A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /> </svg>}
+                previousLabel={ <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.9165 1.16634L1.08317 6.99967L6.9165 12.833" stroke="#333333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /> </svg>}
                 renderOnZeroPageCount={null}
                 containerClassName="pagination"
                 pageLinkClassName='page-num'
