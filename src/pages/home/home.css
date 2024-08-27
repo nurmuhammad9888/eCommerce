@@ -1,0 +1,181 @@
+.home-wrap {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-left {
+    padding-top: 155px;
+    border-radius: 10px;
+    padding-left: 60px;
+    width: 872px;
+    height: 600px;
+    background-image: url("../../assets/images/homebg.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-left-title {
+    max-width: 550px;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--gray-scale-white);
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.home-left-sale {
+    position: relative;
+    margin-top: 28px;
+    margin-bottom: 0;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px; 
+    color: var(--gray-scale-white);
+}
+.home-left-sale::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 3px;
+    height: 65px;
+    background: var(--branding-success-bright);
+}
+.home-left-percentage {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px; 
+    color: var(--gray-scale-white);
+    border-radius: 5px;
+    padding: 4px 12px;
+    background: var(--branding-warning);
+}
+.home-left-text-order {
+    margin-top: 8px;
+    margin-bottom: 28px;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-white);
+    opacity: 0.8;
+}
+.home-left-btn {
+    position: relative;
+    border-radius: 53px;
+    padding: 16px 40px;
+    width: 191px;
+    height: 51px;
+    background: var(--gray-scale-white);
+    display: inline-block;
+}
+.home-left-btn::before{
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    width: 18px;
+    height: 15px;
+    background-image: url("../../assets/images/homearrow.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.home-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px; 
+    color: var(--branding-success);
+    text-decoration: none;
+}
+.home-right-list {
+    list-style: none;
+    padding-left: 0;
+}
+.home-right-bottom-item {
+    padding: 32px;
+    border-radius: 10px;
+    width: 423px;
+    height: 288px;
+    background-image: url("../../assets/images/homebanner01.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-right-bottom-item:nth-child(2){
+    margin-top: 24px;
+    background-image: url("../../assets/images/homebanner02.jpg");
+}
+.home-right-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gray-scale-gray-–-900);
+}
+.home-right-sale {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.home-right-text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px; 
+    color: var(--gray-scale-gray-–-600);
+}
+.home-right-btn,
+.home-right-bottom-btn {
+    position: relative;
+    display: inline-block;
+    width: 108px;
+}
+.home-right-btn::before,
+.home-right-bottom-btn::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: -2px;
+    width: 18px;
+    height: 15px;
+    background-image: url("../../assets/images/homearrow.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.home-right-bottom-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+.home-right-bottom-text {
+    width: 343px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px; 
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+.home-right-bottom-btn {
+    margin: 0 auto;
+    display: block;
+}

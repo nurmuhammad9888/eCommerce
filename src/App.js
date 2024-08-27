@@ -19,6 +19,7 @@ import { Wishlist } from './pages/Account/Wishlist';
 import { ShoppingCart } from './pages/Account/ShoppingCart';
 import { Settings } from './pages/Account/Settings';
 import { Logout } from './pages/Account/Logout';
+import Home from './pages/home/Home';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/about' element={<About/>}/>

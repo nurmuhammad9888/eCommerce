@@ -41,7 +41,7 @@ const handlerSubmit = (evt) =>{
                         <input onChange={(evt) => setEmail(evt.target.value)} className='email-input' type="email" name="email" placeholder='Email' required/>
                         <label className='passwor-eye-wrap'>
                             <input onChange={(evt) => setPassword(evt.target.value)} className='passwor-input' type={eye ? "text" : "password"} name='password' placeholder='Password' required/>
-                            <img src={eye ? HedeEye : Eye} onClick={() => setEye(!eye)} className='eye' alt='eye'></img>
+                            <img src={eye ? HedeEye : Eye} onClick={() => setEye(!eye)} className='signneye' alt='eye'></img>
                         </label>
                         <div>
                         <span className='error'>{error}</span>

@@ -107,8 +107,8 @@ export const About = () => {
                                 modules={[Navigation]}
                                 navigation
                                 loop={true}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
+                                // onSlideChange={() => console.log('slide change')}
+                                // onSwiper={(swiper) => console.log(swiper)}
                                 >
                                     <SwiperSlide>    
                                         <li className="about-team-item">
@@ -180,8 +180,8 @@ export const About = () => {
                                 modules={[Navigation]}
                                 navigation
                                 loop={true}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
+                                // onSlideChange={() => console.log('slide change')}
+                                // onSwiper={(swiper) => console.log(swiper)}   
                                 >
                                 <SwiperSlide>
                                     <li className="about-client-item">

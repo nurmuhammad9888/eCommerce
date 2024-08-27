@@ -41,12 +41,12 @@ export const Register = () => {
                     <input onChange={(evt) => setEmail(evt.target.value)} className='email-input' type="email" name="email" placeholder='Email' required/>
                     <label className='passwor-eye-wrap'>
                         <input onChange={(evt) => setPassword(evt.target.value)} className='passwor-input' type={eye ? "text" : "password"} name='password' placeholder='Password' minLength={6} max={19} required/>
-                        <img src={eye ? HedeEye : Eye} onClick={() => setEye(!eye)} className='eye' alt='eye'></img>
+                        <img src={eye ? HedeEye : Eye} onClick={() => setEye(!eye)} className='signneye' alt='eye'></img>
                     </label>
                     <div>
                         <label className='passwor-eye-wrap'>
                             <input onChange={(evt) => setCopyPassword(evt.target.value)} className={error ? 'passwor-input passwor-input-error' : 'passwor-input'} type={confirmeye ? "text" : "password"} name='confirm_password' placeholder='Confirm Password' minLength={6} max={19} required/>
-                            <img src={confirmeye ? HedeEye : Eye} onClick={() => setConfirmEye(!confirmeye)} className='eye' alt='confirmeye'></img>
+                            <img src={confirmeye ? HedeEye : Eye} onClick={() => setConfirmEye(!confirmeye)} className='signneye' alt='confirmeye'></img>
                         </label>
                     </div>
                     <span className='error'>{error}</span>

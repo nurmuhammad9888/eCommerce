@@ -63,10 +63,10 @@ const [activ ,setActiv] = useState(false)
                     <ul className="header-list">
                         <li className="header-item">
                             <NavLink onClick={handeler} className={({isActive}) => isActive ? "header-link header-link-active " : "header-link"} to={"/"}>Home</NavLink>
-                            <div className={activ ? 'dropdown-content-active' : 'dropdown-content'}>
+                            {/* <div className={activ ? 'dropdown-content-active' : 'dropdown-content'}>
                                 <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/"}>Home</NavLink>
                                 <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/"}>Home</NavLink>
-                            </div>
+                            </div> */}
                         </li>
                         <li className="header-item">
                             <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/shop"}>Shop</NavLink>
@@ -82,6 +82,9 @@ const [activ ,setActiv] = useState(false)
                         </li>
                         <li className="header-item">
                             <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/contact"}>Contact Us</NavLink>
+                        </li>
+                        <li className="header-item">
+                            <NavLink className={({isActive}) => isActive ? "header-link header-link-active" : "header-link"} to={"/account"}>Account</NavLink>
                         </li>
                     </ul>
                     <div className="header-conatct">
