@@ -1,11 +1,12 @@
 import React from 'react'
 import "./home.css"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+import { SupportCard } from "./SupportCard/SupportCard";
 
 export default function Home() {
     return (
         <div className='container'>
-            <div className="home-wrap">
+            <section className="home-wrap">
                 <div className="home-left">
                     <h1 className="home-left-title">Fresh & Healthy Organic Food</h1>
                     <p className="home-left-sale">Sale up to<span className='home-left-percentage'>30% OFF</span></p>
@@ -25,7 +26,10 @@ export default function Home() {
                         <Link className='home-right-bottom-btn home-btn' to="/">Shop Now</Link>
                     </li>
                 </ul>
-            </div>
+            </section>
+            <section className='home-support'>
+                <SupportCard/>
+            </section>
         </div>
     )
 }
