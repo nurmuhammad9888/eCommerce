@@ -187,3 +187,44 @@
     box-shadow: 0 8px 40px 0 rgba(0, 38, 3, 0.08);
     background: var(--gray-scale-white);
 }
+
+/* TITLE LINK  */
+
+.hometitle-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.hometitle-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px; 
+    color: var(--gray-scale-gray-–-900);
+}
+.hometitle-link {
+    position: relative;
+    /* display: inline-block; */
+    margin-right: 27px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: var(--branding-success);
+}
+.hometitle-link::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    width: 18px;
+    height: 15px;
+    background-image: url("../../assets/images/homearrow.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.home-popular-wrap{
+    margin: 60px 0;
+}

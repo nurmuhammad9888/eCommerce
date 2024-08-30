@@ -2,6 +2,8 @@ import React from 'react'
 import "./home.css"
 import { Link, NavLink } from 'react-router-dom';
 import { SupportCard } from "./SupportCard/SupportCard";
+import { HomeTitle } from './HomeTitle';
+import { HomeCard } from './HomeCard/HomeCard';
 
 export default function Home() {
     return (
@@ -29,6 +31,10 @@ export default function Home() {
             </section>
             <section className='home-support'>
                 <SupportCard/>
+            </section>
+            <section className='home-popular-wrap'>
+                <HomeTitle title="Popular Categories" link="/all" />
+                <HomeCard />
             </section>
         </div>
     )

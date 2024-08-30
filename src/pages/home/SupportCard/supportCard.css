@@ -11,20 +11,6 @@
     /* width: 306px; */
     /* height: 48px; */
 }
-.home-support-item::before{
-    content: '';
-    position: absolute;
-    display: none;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--branding-success);
-    
-}
-.home-support-item:hover ~ .home-support-item::before{
-    display: block;
-}
 .home-support-item-link {
     color: #00B307;
     text-decoration: none;
