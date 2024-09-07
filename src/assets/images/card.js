@@ -11,6 +11,17 @@ import popularhome10 from "./popularhome10.png";
 import popularhome11 from "./popularhome11.png";
 import popularhome12 from "./popularhome12.png";
 
+import homeproducts01 from "./homeproducts01.png";
+import homeproducts02 from "./homeproducts02.png";
+import homeproducts03 from "./homeproducts03.png";
+import homeproducts04 from "./homeproducts04.png";
+import homeproducts05 from "./homeproducts05.png";
+import homeproducts06 from "./homeproducts06.png";
+import homeproducts07 from "./homeproducts07.png";
+import homeproducts08 from "./homeproducts08.png";
+import homeproducts09 from "./homeproducts09.png";
+import homeproducts10 from "./homeproducts10.png";
+
 
 export const assets = {
     popularhome01,
@@ -25,4 +36,15 @@ export const assets = {
     popularhome10,
     popularhome11,
     popularhome12,
+    
+    homeproducts01,
+    homeproducts02,
+    homeproducts03,
+    homeproducts04,
+    homeproducts05,
+    homeproducts06,
+    homeproducts07,
+    homeproducts08,
+    homeproducts09,
+    homeproducts10,
 }
