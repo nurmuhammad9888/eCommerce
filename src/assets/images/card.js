@@ -22,6 +22,8 @@ import homeproducts08 from "./homeproducts08.png";
 import homeproducts09 from "./homeproducts09.png";
 import homeproducts10 from "./homeproducts10.png";
 
+import staricon from "./home-rating.png";
+
 
 export const assets = {
     popularhome01,
@@ -47,4 +49,6 @@ export const assets = {
     homeproducts08,
     homeproducts09,
     homeproducts10,
+
+    staricon,
 }

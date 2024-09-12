@@ -4,6 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { SupportCard } from "./SupportCard/SupportCard";
 import { HomeTitle } from './HomeTitle';
 import { HomeCard } from './HomeCard/HomeCard';
+import { homeProducts, popularData } from '../../data/data';
+import { HomeProducts } from './HomeProducts/HomeProducts';
 
 export default function Home() {
     return (
@@ -34,7 +36,11 @@ export default function Home() {
             </section>
             <section className='home-popular-wrap'>
                 <HomeTitle title="Popular Categories" link="/all" />
-                <HomeCard />
+                <HomeCard popularData={popularData} />
+            </section>
+            <section className='home-products-wrap'>
+                <HomeTitle title="Popular Products" link="/all" />
+                <HomeProducts homeProducts={homeProducts}/>
             </section>
         </div>
     )
